@@ -28,7 +28,11 @@ export const metadata = {
     canonical: "https://www.liamschenk.ch",
   },
   icons: {
-    icon: [{ url: "/metadata/favicon.svg", type: "image/svg+xml" }],
+    icon: [
+      { url: "/metadata/icon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/metadata/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/metadata/favicon.svg", type: "image/svg+xml" },
+    ],
     apple: [{ url: "/metadata/apple-touch-icon.png", sizes: "180x180" }],
   },
   manifest: "/site.webmanifest",
