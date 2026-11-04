@@ -17,6 +17,9 @@ export default function About({ about }) {
         <h1 className="color-text-primary padding-bottom-small">
           {about.name}
         </h1>
+        <h2 className="color-text-secondary padding-bottom-small">
+          {about.profession} · {about.location}
+        </h2>
         <p className="color-text-tertiary">{about.description}</p>
       </div>
     </section>

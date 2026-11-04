@@ -28,9 +28,6 @@ export default function Projects({ projects }) {
                 src={project.picture?.asset?.url}
                 alt={project.name}
                 draggable="false"
-                // style={{
-                //   backgroundColor: `var(--color-${project.backgroundColor || "red"})`,
-                // }}
               />
             </div>
             <div

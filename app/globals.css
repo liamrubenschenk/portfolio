@@ -8,33 +8,37 @@
   --border-radius-l: 8px;
   --border-radius-m: 4px;
   --border-radius-s: 2px;
-  --font-size: 14px;
+  --font-size-large: 18x;
+  --font-size-medium: 14px;
+  --font-size-small: 10px;
   --font-weight: 400;
-  --line-height: 20px;
+  --line-height-large: 24px;
+  --line-height-medium: 20px;
+  --line-height-small: 16px;
 }
 
 /* Theming */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-background-primary: rgb(250 250 250);
-    --color-background-secondary: rgb(240 240 240);
-    --color-dot-inactive: rgb(199 199 199);
-    --color-dot-active: rgb(168 168 168);
-    --color-text-primary: rgb(5 5 5);
-    --color-text-secondary: rgb(46 46 46);
-    --color-text-tertiary: rgb(87 87 87);
-    --color-red: rgb(255 56 60);
-    --color-orange: rgb(255 141 40);
-    --color-yellow: rgb(255 204 0);
-    --color-green: rgb(52 199 89);
-    --color-mint: rgb(0 200 179);
-    --color-teal: rgb(0 195 208);
-    --color-cyan: rgb(0 192 232);
-    --color-blue: rgb(0 136 255);
-    --color-indigo: rgb(97 85 245);
-    --color-purple: rgb(203 48 224);
-    --color-pink: rgb(255 45 85);
-    --color-brown: rgb(172 127 94);
+    --color-background-primary: rgb(235, 235, 240);
+    --color-background-secondary: rgb(216, 216, 220);
+    --color-dot-inactive: rgb(174, 174, 178);
+    --color-dot-active: rgb(142, 142, 147);
+    --color-text-primary: rgb(36, 36, 38);
+    --color-text-secondary: rgb(84, 84, 86);
+    --color-text-tertiary: rgb(124, 124, 128);
+    --color-red: rgb(255, 56, 60);
+    --color-orange: rgb(255, 141, 40);
+    --color-yellow: rgb(255, 204, 0);
+    --color-green: rgb(52, 199, 89);
+    --color-mint: rgb(0, 200, 179);
+    --color-teal: rgb(0, 195, 208);
+    --color-cyan: rgb(0, 192, 232);
+    --color-blue: rgb(0, 136, 255);
+    --color-indigo: rgb(97, 85, 245);
+    --color-purple: rgb(203, 48, 224);
+    --color-pink: rgb(255, 45, 85);
+    --color-brown: rgb(172, 127, 94);
   }
 
   html {
@@ -44,25 +48,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background-primary: rgb(26 26 26);
-    --color-background-secondary: rgb(36 36 36);
-    --color-dot-inactive: rgb(77 77 77);
-    --color-dot-active: rgb(107 107 107);
-    --color-text-primary: rgb(230 230 232);
-    --color-text-secondary: rgb(189 189 189);
-    --color-text-tertiary: rgb(148 148 148);
-    --color-red: rgb(255 66 69);
-    --color-orange: rgb(255 146 48);
-    --color-yellow: rgb(255 214 0);
-    --color-green: rgb(48 209 88);
-    --color-mint: rgb(0 218 195);
-    --color-teal: rgb(0 210 224);
-    --color-cyan: rgb(60 211 254);
-    --color-blue: rgb(0 145 255);
-    --color-indigo: rgb(109 124 255);
-    --color-purple: rgb(219 52 242);
-    --color-pink: rgb(255 55 95);
-    --color-brown: rgb(183 138 102);
+    --color-background-primary: rgb(36, 36, 38);
+    --color-background-secondary: rgb(54, 54, 56);
+    --color-dot-inactive: rgb(84, 84, 86);
+    --color-dot-active: rgb(124, 124, 128);
+    --color-text-primary: rgb(235, 235, 240);
+    --color-text-secondary: rgb(174, 174, 178);
+    --color-text-tertiary: rgb(142, 142, 147);
+    --color-red: rgb(255, 66, 69);
+    --color-orange: rgb(255, 146, 48);
+    --color-yellow: rgb(255, 214, 0);
+    --color-green: rgb(48, 209, 88);
+    --color-mint: rgb(0, 218, 195);
+    --color-teal: rgb(0, 210, 224);
+    --color-cyan: rgb(60, 211, 254);
+    --color-blue: rgb(0, 145, 255);
+    --color-indigo: rgb(109, 124, 255);
+    --color-purple: rgb(219, 52, 242);
+    --color-pink: rgb(255, 55, 95);
+    --color-brown: rgb(183, 138, 102);
   }
 
   html {
@@ -80,7 +84,6 @@
 /* Tags */
 html {
   max-width: 100svw;
-  scrollbar-gutter: stable both-edges;
 }
 
 body {
@@ -98,9 +101,9 @@ h1,
 h2,
 p,
 a {
-  font-size: var(--font-size);
+  font-size: var(--font-size-medium);
   font-weight: var(--font-weight);
-  line-height: var(--line-height);
+  line-height: var(--line-height-medium);
   text-wrap: balance;
 }
 

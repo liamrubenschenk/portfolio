@@ -16,13 +16,13 @@
   aspect-ratio: 1 / 1;
   padding: var(--spacing-medium);
   overflow: hidden;
-  background-color: var(--color-background-secondary);
+  background-color: rgb(from var(--color-background-secondary) r g b / 0.5);
   border-radius: var(--border-radius-l);
 }
 
 .carousel-track {
   display: flex;
-  height: 100%;
+  height: calc(100% - 2 * var(--spacing-medium));
   touch-action: pan-y;
 }
 

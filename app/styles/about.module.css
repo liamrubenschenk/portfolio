@@ -11,8 +11,3 @@
   background-color: var(--color-background-secondary);
   border-radius: 100%;
 }
-
-.about-details {
-  display: flex;
-  flex-wrap: wrap;
-}
