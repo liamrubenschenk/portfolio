@@ -1,5 +1,4 @@
 import { Inter } from "next/font/google";
-import { LazyMotion, domAnimation } from "motion/react";
 
 import "./globals.css";
 
@@ -12,14 +11,10 @@ export const metadata = {
   metadataBase: new URL("https://www.liamschenk.ch"),
   title: "Liam Schenk",
   description:
-    "Portfolio von Liam Schenk, gelerntem Mediamatiker mit Abschluss bei Swisscom.",
+    "Hallo, ich bin Liam! Zurzeit arbeite ich als Mediamatiker beim Schweizerischen Turnverband.",
   keywords: [
-    "Portfolio",
     "Liam Schenk",
     "Mediamatiker",
-    "Grafikdesign",
-    "Webdesign",
-    "Multimedia",
     "Schweizerischer Turnverband",
     "Swisscom",
     "Schweiz",
@@ -39,7 +34,7 @@ export const metadata = {
   openGraph: {
     title: "Liam Schenk",
     description:
-      "Portfolio von Liam Schenk, gelerntem Mediamatiker mit Abschluss bei Swisscom.",
+      "Hallo, ich bin Liam! Zurzeit arbeite ich als Mediamatiker beim Schweizerischen Turnverband.",
     url: "https://www.liamschenk.ch",
     siteName: "Liam Schenk",
     images: [
@@ -47,7 +42,7 @@ export const metadata = {
         url: "https://www.liamschenk.ch/metadata/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Portfolio von Liam Schenk, gelerntem Mediamatiker mit Abschluss bei Swisscom.",
+        alt: "Hallo, ich bin Liam! Zurzeit arbeite ich als Mediamatiker beim Schweizerischen Turnverband.",
       },
     ],
     locale: "de_CH",
@@ -57,7 +52,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Liam Schenk",
     description:
-      "Portfolio von Liam Schenk, gelerntem Mediamatiker mit Abschluss bei Swisscom.",
+      "Hallo, ich bin Liam! Zurzeit arbeite ich als Mediamatiker beim Schweizerischen Turnverband.",
     images: ["https://www.liamschenk.ch/metadata/og-image.jpg"],
   },
 };
@@ -65,7 +60,7 @@ export const metadata = {
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#fafafa",
+  themeColor: "#ebebf0",
 };
 
 const personSchema = {
@@ -80,8 +75,8 @@ const personSchema = {
     name: "Schweizerischer Turnverband",
   },
   sameAs: [
-    "https://github.com/liamschenk",
-    "https://www.linkedin.com/in/liamschenk/",
+    "https://github.com/liamrubenschenk",
+    "https://www.linkedin.com/in/liamrubenschenk/",
   ],
 };
 
@@ -93,7 +88,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
-        <LazyMotion features={domAnimation}>{children}</LazyMotion>
+        {children}
       </body>
     </html>
   );
