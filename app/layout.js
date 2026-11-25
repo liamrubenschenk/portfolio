@@ -59,8 +59,11 @@ export const metadata = {
 
 export const viewport = {
   width: "device-width",
-  initialScale: 1,
-  themeColor: "#ebebf0",
+    initialScale: 1,
+    themeColor: [
+      { media: "(prefers-color-scheme: light)", color: "#ebebf0" },
+      { media: "(prefers-color-scheme: dark)", color: "#242426" },
+    ],
 };
 
 const personSchema = {
@@ -88,7 +91,7 @@ export default function RootLayout({ children }) {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
-        {children}
+        <div className="viewport">{children}</div>
       </body>
     </html>
   );

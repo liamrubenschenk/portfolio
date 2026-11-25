@@ -8,7 +8,7 @@
   --border-radius-l: 8px;
   --border-radius-m: 4px;
   --border-radius-s: 2px;
-  --font-size-large: 18x;
+  --font-size-large: 18px;
   --font-size-medium: 14px;
   --font-size-small: 10px;
   --font-weight: 400;
@@ -87,13 +87,29 @@ html {
 }
 
 body {
-  max-width: 576px;
-  padding: var(--spacing-extra-large) var(--spacing-large);
-  margin: 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
   background: var(--color-background-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Viewport */
+.viewport {
+  height: 100dvh;
+  padding: var(--spacing-extra-large) 0;
+  overflow: hidden auto;
+  mask-image: linear-gradient(
+    transparent,
+    var(--color-background-primary) var(--spacing-extra-large),
+    var(--color-background-primary) calc(100% - var(--spacing-extra-large)),
+    transparent
+  );
+}
+
+.viewport > * {
+  max-width: 576px;
+  padding: 0 var(--spacing-large);
+  margin: 0 auto;
 }
 
 /* Text */
